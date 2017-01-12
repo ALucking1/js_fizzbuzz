@@ -15,4 +15,19 @@ function Fizzbuzz() {
   Fizzbuzz.prototype.isDivisibleByFifteen = function(num) {
     return this._isDivisibleBy(num, 15);
   };
+
+  Fizzbuzz.prototype.response = function(num) {
+    if(this.isDivisibleByFifteen(num)) {
+      return 'Fizzbuzz';
+    }
+    if(this.isDivisibleByThree(num)) {
+      return 'Fizz';
+    }
+    if(this.isDivisibleByFive(num)) {
+      return 'Buzz'; }
+    {
+      return num;
+    }
+
+  };
 }
